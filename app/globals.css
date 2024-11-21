@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-b from-[#0a192f] to-[#112240];
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-[#112240]/30 backdrop-blur-lg border border-[#233554]/50;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-[#64ffda] to-[#48c7b0] bg-clip-text text-transparent;
+  }
+}
