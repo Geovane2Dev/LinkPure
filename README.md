@@ -1,5 +1,5 @@
 <div align="center">
-  <!-- <img src="public/icon-192x192.png" alt="LinkPure Logo" width="80" height="80" style="border-radius: 10px;"> -->
+  <img src="public/icon.png" alt="LinkPure Logo" width="80" height="80" style="border-radius: 10px;">
 
   <h1>LinkPure</h1>
   <p>Uma ferramenta moderna para limpar parâmetros de rastreamento de links</p>
@@ -11,8 +11,6 @@
     ·
     <a href="https://github.com/GeovaneSec/LinkPure/issues">Sugerir Feature</a>
   </p>
-
-  <!-- <img src="public/preview.png" alt="LinkPure Preview" width="100%"> -->
 </div>
 
 ## 🌟 Sobre o Projeto
@@ -84,9 +82,3 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 - [Next.js](https://nextjs.org) - Framework
 - [TailwindCSS](https://tailwindcss.com) - Estilização
 - [Font Awesome](https://fontawesome.com) - Ícones
-
----
-
-<div align="center">
-  <sub>Construído com ❤️ por <a href="https://github.com/GeovaneSec">Geovane</a></sub>
-</div>

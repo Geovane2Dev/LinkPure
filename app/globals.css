@@ -4,16 +4,24 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-b from-[#0a192f] to-[#112240];
+    @apply bg-slate-950 text-slate-100 antialiased;
   }
 }
 
 @layer components {
-  .glass-effect {
-    @apply bg-[#112240]/30 backdrop-blur-lg border border-[#233554]/50;
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-all duration-300 font-medium shadow-lg shadow-blue-500/20 group;
   }
   
-  .gradient-text {
-    @apply bg-gradient-to-r from-[#64ffda] to-[#48c7b0] bg-clip-text text-transparent;
+  .btn-primary::before {
+    @apply content-[''] absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200;
+  }
+  
+  .card {
+    @apply relative bg-slate-900/50 backdrop-blur-xl border border-slate-800/50 rounded-2xl p-8 shadow-2xl hover:border-blue-500/30 transition-all duration-500;
+  }
+  
+  .card::before {
+    @apply content-[''] absolute -inset-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl blur opacity-5 group-hover:opacity-20 transition duration-1000 group-hover:duration-200;
   }
 }

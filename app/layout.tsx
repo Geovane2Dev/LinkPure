@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
-config.autoAddCss = false; // Evita duplicação de CSS do FontAwesome
+config.autoAddCss = false;
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
-  display: "swap", // Melhora performance de carregamento da fonte
+  display: "swap",
 });
 
 const geistMono = localFont({
@@ -19,6 +19,13 @@ const geistMono = localFont({
   weight: "100 900",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#64ffda',
+};
 
 export const metadata: Metadata = {
   title: "LinkPure - Remove rastreamento de links | Limpe seus links",
@@ -52,8 +59,6 @@ export const metadata: Metadata = {
     description: "Remova parâmetros de rastreamento e afiliados dos seus links favoritos",
     images: ["/og-image.png"],
   },
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
-  themeColor: "#64ffda",
 };
 
 export default function RootLayout({
@@ -65,6 +70,8 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
       </head>
