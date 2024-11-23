@@ -4,23 +4,26 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900/80 backdrop-blur-xl border-t border-slate-800/50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-8 md:py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-            {/* Logo e Descrição */}
-            <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <Image
-                  src="/icon.png"
-                  alt="LinkPure Logo"
-                  width={64}
-                  height={64}
-                  className="rounded-lg"
-                  priority
-                />
+    <footer className="relative bg-slate-900/80 backdrop-blur-xl border-t border-slate-800/50">
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-50"></div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="py-12 md:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+            <div className="space-y-6">
+              <div className="flex items-center space-x-3 group">
+                <div className="relative">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-emerald-500/20 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                  <Image
+                    src="/icon.png"
+                    alt="LinkPure Logo"
+                    width={48}
+                    height={48}
+                    className="relative rounded-lg transition-transform duration-300 group-hover:scale-105"
+                    priority
+                  />
+                </div>
                 <span className="text-2xl font-bold text-white">
-                  Link<span className="bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent">Pure</span>
+                  Link<span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Pure</span>
                 </span>
               </div>
               <p className="text-slate-400 leading-relaxed">
@@ -44,7 +47,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Links Rápidos */}
             <div className="md:ml-auto">
               <h3 className="text-lg font-semibold text-white mb-4">Links Rápidos</h3>
               <ul className="space-y-3">
@@ -69,7 +71,6 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Redes Sociais */}
             <div>
               <h3 className="text-lg font-semibold text-white mb-4">Conecte-se</h3>
               <div className="flex space-x-4">
@@ -95,7 +96,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Copyright */}
           <div className="mt-8 pt-8 border-t border-slate-800/50">
             <p className="text-center text-slate-400">
               © {new Date().getFullYear()} LinkPure. Desenvolvido por{' '}

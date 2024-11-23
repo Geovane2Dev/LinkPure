@@ -10,18 +10,22 @@
 
 @layer components {
   .btn-primary {
-    @apply relative inline-flex items-center justify-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-all duration-300 font-medium shadow-lg shadow-blue-500/20 group;
+    @apply relative inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-xl transition-all duration-300 font-medium shadow-lg hover:shadow-blue-500/25 group;
   }
   
-  .btn-primary::before {
-    @apply content-[''] absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200;
+  .btn-primary:hover {
+    @apply shadow-xl scale-[1.02];
   }
   
-  .card {
-    @apply relative bg-slate-900/50 backdrop-blur-xl border border-slate-800/50 rounded-2xl p-8 shadow-2xl hover:border-blue-500/30 transition-all duration-500;
+  .card-gradient {
+    @apply relative overflow-hidden;
   }
-  
-  .card::before {
-    @apply content-[''] absolute -inset-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl blur opacity-5 group-hover:opacity-20 transition duration-1000 group-hover:duration-200;
+
+  .card-gradient::before {
+    @apply content-[''] absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-emerald-500/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500;
+  }
+
+  .card-content {
+    @apply relative bg-slate-900/80 backdrop-blur-xl border border-slate-800/50 rounded-xl p-6 transition-all duration-300 hover:border-blue-500/30;
   }
 }
