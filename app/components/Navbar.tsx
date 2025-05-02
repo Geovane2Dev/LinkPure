@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faBolt, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import Image from 'next/image'
+import Image from 'next/image';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 interface NavLinkProps {
@@ -46,8 +46,8 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden md:flex items-center space-x-6">
-            <NavLink href="https://github.com/GeovaneSec/LinkPure" icon={faGithub} text="GitHub" />
-            <NavLink href="https://geovanebr.me" icon={faGlobe} text="Portfolio" />
+            <NavLink href="https://github.com/Geovane2Dev/LinkPure" icon={faGithub} text="GitHub" />
+            <NavLink href="https://g2dev.me" icon={faGlobe} text="Portfolio" />
           </div>
 
           <MobileMenuButton isOpen={isMenuOpen} onClick={() => setIsMenuOpen(!isMenuOpen)} />
@@ -84,8 +84,8 @@ const MobileMenuButton = ({ isOpen, onClick }: MobileMenuButtonProps) => (
 const MobileMenu = ({ isOpen }: MobileMenuProps) => (
   <div className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
     <div className="py-3 space-y-2">
-      <NavLink href="https://github.com/GeovaneSec/LinkPure" icon={faGithub} text="GitHub" />
-      <NavLink href="https://geovanebr.me" icon={faGlobe} text="Portfolio" />
+      <NavLink href="https://github.com/Geovane2Dev/LinkPure" icon={faGithub} text="GitHub" />
+      <NavLink href="https://g2dev.me" icon={faGlobe} text="Portfolio" />
     </div>
   </div>
 );

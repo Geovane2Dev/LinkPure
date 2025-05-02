@@ -29,35 +29,35 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "LinkPure - Remove rastreamento de links | Limpe seus links",
-  description: "Ferramenta gratuita para remover parâmetros de rastreamento e afiliados de links da Amazon, AliExpress, Mercado Livre e YouTube. Proteja sua privacidade online.",
-  keywords: "remove rastreamento, limpar links, amazon, aliexpress, mercado livre, youtube, privacidade online, remover afiliados",
-  authors: [{ name: "Geovane", url: "https://geovanebr.me" }],
+  title: "LinkPure - Clean tracking from your links | Privacy first",
+  description: "Free tool to remove tracking and affiliate parameters from Amazon, AliExpress, Mercado Livre, Shopee, and YouTube links. Protect your online privacy.",
+  keywords: "link cleaner, remove tracking, amazon, aliexpress, mercado livre, youtube, privacy, remove affiliate links",
+  authors: [{ name: "Geovane", url: "https://g2dev.me" }],
   creator: "Geovane",
   publisher: "Geovane",
   robots: "index, follow",
   alternates: {
-    canonical: "https://linkpure.geovanebr.me",
+    canonical: "https://linkpure.g2dev.me",
   },
   openGraph: {
     type: "website",
-    url: "https://linkpure.geovanebr.me",
-    title: "LinkPure - Remove rastreamento de links | Limpe seus links",
-    description: "Ferramenta gratuita para remover parâmetros de rastreamento e afiliados de links da Amazon, AliExpress, Mercado Livre e YouTube.",
+    url: "https://linkpure.g2dev.me",
+    title: "LinkPure - Clean tracking from your links | Privacy first",
+    description: "Free tool to remove tracking and affiliate parameters from Amazon, AliExpress, Mercado Livre, and YouTube links.",
     siteName: "LinkPure",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "LinkPure - Remove rastreamento de links",
+        alt: "LinkPure - Clean tracking from your links",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LinkPure - Remove rastreamento de links",
-    description: "Remova parâmetros de rastreamento e afiliados dos seus links favoritos",
+    title: "LinkPure - Clean tracking from your links",
+    description: "Remove tracking and affiliate parameters from your favorite links easily.",
     images: ["/og-image.png"],
   },
 };
@@ -68,7 +68,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -76,9 +76,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <SpeedInsights />
       </body>
