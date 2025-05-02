@@ -5,11 +5,11 @@
   <p>A modern tool to clean tracking parameters from links</p>
 
   <p>
-    <a href="https://linkpure.geovanebr.me">View Demo</a>
+    <a href="https://g2dev.me">View Demo</a>
     ·
-    <a href="https://github.com/GeovaneSec/LinkPure/issues">Report Bug</a>
+    <a href="https://github.com/Geovane2Dev/LinkPure/issues">Report Bug</a>
     ·
-    <a href="https://github.com/GeovaneSec/LinkPure/issues">Request Feature</a>
+    <a href="https://github.com/Geovane2Dev/LinkPure/issues">Request Feature</a>
   </p>
 </div>
 
@@ -19,37 +19,37 @@ LinkPure is a modern and efficient web tool designed to remove tracking paramete
 
 ### ✨ Key Features
 
-- 🛍️ **Amazon**: Removes tracking parameters and affiliate tags
-- 🌐 **AliExpress**: Cleans redirect links and tracking parameters
-- 🛒 **Mercado Livre**: Removes affiliate parameters
-- 🛍️ **Shopee**: Cleans tracking and affiliate parameters
-- 🌟 **Banggood**: Removes tracking parameters from links
-- 📺 **YouTube**: Extracts original links from redirects
+- 🛍️ **Amazon**: Removes tracking parameters and affiliate tags  
+- 🌐 **AliExpress**: Cleans redirect links and tracking parameters  
+- 🛒 **Mercado Livre**: Removes affiliate parameters  
+- 🛍️ **Shopee**: Cleans tracking and affiliate parameters  
+- 🌟 **Banggood**: Removes tracking parameters from links  
+- 📺 **YouTube**: Extracts original links from redirects  
 
 ### 🚀 Features
 
-- 🔒 Privacy-focused link cleaning
-- ⚡ Instant URL processing
-- 🎨 Modern and responsive UI
-- 🌐 Multi-platform support
-- 📱 Mobile-friendly design
-- 📋 One-click copy functionality
-- 🔗 Direct link opening
-- 🌍 Multi-language support (coming soon)
+- 🔒 Privacy-focused link cleaning  
+- ⚡ Instant URL processing  
+- 🎨 Modern and responsive UI  
+- 🌐 Multi-platform support  
+- 📱 Mobile-friendly design  
+- 📋 One-click copy functionality  
+- 🔗 Direct link opening  
+- 🌍 Multi-language support (coming soon)  
 
 ### 🛠️ Built With
 
-- [Next.js 14](https://nextjs.org/) - React Framework
-- [TailwindCSS](https://tailwindcss.com/) - CSS Framework
-- [TypeScript](https://www.typescriptlang.org/) - Programming Language
-- [Font Awesome](https://fontawesome.com/) - Icons
-- [Geist Font](https://vercel.com/font) - Typography
+- [Next.js 15](https://nextjs.org/) – React Framework  
+- [TailwindCSS](https://tailwindcss.com/) – CSS Framework  
+- [TypeScript](https://www.typescriptlang.org/) – Programming Language  
+- [Font Awesome](https://fontawesome.com/) – Icons  
+- [Geist Font](https://vercel.com/font) – Typography  
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js 18.17 or higher
+- Node.js 18.17 or higher  
 - npm or yarn
 
 ### Installation
